@@ -16,7 +16,8 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 - HC-05 Bluetooth Module
 - Jumper Wires (Male–Female)
 
-<img width="687" height="794" alt="Screenshot 2025-11-18 144349" src="https://github.com/user-attachments/assets/0a06e01f-cf34-401a-ad33-f378c493f5f1" />
+<img width="449" height="534" alt="Screenshot 2025-11-18 161919" src="https://github.com/user-attachments/assets/1dcc0e3c-2744-4db4-abeb-94077e4802b9" />
+
 
 ## `Pin Configuration`
 
