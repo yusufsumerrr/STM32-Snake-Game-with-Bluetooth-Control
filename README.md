@@ -10,7 +10,10 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 - 8x8 LED Matrix
 - MAX7219 Module
 - HC-06 Bluetooth Module
-- Jumper wires (male–female)
+- Jumper Wires (Male–Female)
+
+![75b193c6-7855-496f-aee9-abb3566b2c71](https://github.com/user-attachments/assets/cab6759e-ea1b-47d7-b492-d4c7b32ad10b)
+
 
 
 
