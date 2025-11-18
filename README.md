@@ -27,10 +27,15 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 - s: Move Down
 - d: Move Right
 
-'''
-xTaskNotifyGive(ledTaskHandle); 
-ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
-'''
+```c
+void SetDirection(char cmd) {
+    switch (cmd) {
+        case 'w': if (SnakeDirection != DOWN)  SnakeDirection = UP;    break;
+        case 's': if (SnakeDirection != UP)    SnakeDirection = DOWN;  break;
+        case 'a': if (SnakeDirection != RIGHT) SnakeDirection = LEFT;  break;
+        case 'd': if (SnakeDirection != LEFT)  SnakeDirection = RIGHT; break;
+    }
+}
 
 
 
