@@ -23,8 +23,8 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 ## `Bluetooth Control`
 
 - w: Move Up
-- a: Move Left
 - s: Move Down
+- a: Move Left
 - d: Move Right
 
 ```c
@@ -36,12 +36,5 @@ void SetDirection(char cmd) {
         case 'd': if (SnakeDirection != LEFT)  SnakeDirection = RIGHT; break;
     }
 }
-
-
-
-
-
-
-
-
+'''
 
