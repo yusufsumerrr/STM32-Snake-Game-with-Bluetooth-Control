@@ -43,9 +43,9 @@ The STM32 SPI peripheral is configured in Half-Duplex Master mode to transmit th
 ---
 
 The MAX7219 CS pin is not automatic and is controlled manually as a GPIO output.
-- The default GPIO output level of the CS pin is set to HIGH.
-- Before starting a data transfer, the CS pin is pulled LOW.
-- After the SPI transfer is complete, CS is set back to HIGH.
+- The default GPIO output level of the CS pin is set to **HIGH**.
+- Before starting a data transfer, the CS pin is pulled **LOW**.
+- After the SPI transfer is complete, CS is set back to **HIGH**.
 
 ```c
 void MAX7219_SendData(uint8_t Addr, uint8_t data)
@@ -71,7 +71,7 @@ System control was achieved via wireless communication through a mobile platform
 
 ---
 
-The HAL_UART_RxCpltCallback() function processes incoming Bluetooth commands using an interrupt-driven mechanism. Each time a character is received, SetDirection() is called to update the snake’s movement direction. After handling the input, UART reception is re-enabled in non-blocking mode.
+**The HAL_UART_RxCpltCallback()** function processes incoming Bluetooth commands using an interrupt-driven mechanism. Each time a character is received, **SetDirection()** is called to update the snake’s movement direction. After handling the input, UART reception is re-enabled in non-blocking mode.
 ```c
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 	if(huart->Instance==USART1){
@@ -82,7 +82,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 }
 ```
 
-The SetDirection() function checks the received 'w', 'a', 's', 'd' commands and prevents the snake from reversing its direction, ensuring safe direction updates.
+**The SetDirection()** function checks the received 'w', 'a', 's', 'd' commands and prevents the snake from reversing its direction, ensuring safe direction updates.
 ```c
 void SetDirection(char cmd) {
     switch (cmd) {
