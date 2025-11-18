@@ -13,7 +13,7 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 - STM32 Nucleo F302R8
 - 8×8 LED Dot Matrix
 - MAX7219 LED Driver
-- HC-06 Bluetooth Module
+- HC-05 Bluetooth Module
 - Jumper Wires (Male–Female)
 
 <img width="687" height="794" alt="Screenshot 2025-11-18 144349" src="https://github.com/user-attachments/assets/0a06e01f-cf34-401a-ad33-f378c493f5f1" />
@@ -22,11 +22,11 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 
 <img width="572" height="492" alt="Screenshot 2025-11-18 145800" src="https://github.com/user-attachments/assets/56cae7e8-617c-48dd-b6ef-18d2bc729ee0" />
 
-- PC4 -> USART1_TX
-- PC5 -> USART1_RX
-- PC10 -> SPI3_SCK (Clock)
-- PC11 -> CS (Chip Select)
-- PC12 -> SPI3_MOSI (Master Out Slave In)
+- PC4 -> USART1_TX -> Bluetooth_RX
+- PC5 -> USART1_RX -> Bluetooth_TX
+- PC10 -> SPI3_SCK (Clock) -> MAX7219_CLK
+- PC11 -> CS (Chip Select) -> MAX7219_CS
+- PC12 -> SPI3_MOSI (Master Out Slave In) -> MAX7219_DIN
 - MAX7219_VCC -> 5V
 
 ## `MAX7219 LED Driver`
