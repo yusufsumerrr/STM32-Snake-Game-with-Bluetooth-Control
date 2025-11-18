@@ -18,7 +18,7 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 
 <img width="449" height="534" alt="Screenshot 2025-11-18 161919" src="https://github.com/user-attachments/assets/1dcc0e3c-2744-4db4-abeb-94077e4802b9" />
 
-
+---
 ## `Pin Configuration`
 
 <img width="572" height="492" alt="Screenshot 2025-11-18 145800" src="https://github.com/user-attachments/assets/56cae7e8-617c-48dd-b6ef-18d2bc729ee0" />
@@ -30,6 +30,7 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 - PC12 -> SPI3_MOSI (Master Out Slave In) -> MAX7219_DIN
 - MAX7219_VCC -> 5V
 
+---
 ## `MAX7219 LED Driver`
 
 MAX7219 communicates with STM32 using an SPI-compatible interface.
@@ -54,6 +55,7 @@ void MAX7219_SendData(uint8_t Addr, uint8_t data)
 	HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 1); 			  //disable slave
 }
 ```
+---
 
 ## `Bluetooth Control`
 
