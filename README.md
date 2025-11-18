@@ -16,19 +16,21 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 
 <img width="687" height="794" alt="Screenshot 2025-11-18 144349" src="https://github.com/user-attachments/assets/0a06e01f-cf34-401a-ad33-f378c493f5f1" />
 
-## ``Pin Configuration`
+## `Pin Configuration`
 
 <img width="572" height="492" alt="Screenshot 2025-11-18 145800" src="https://github.com/user-attachments/assets/56cae7e8-617c-48dd-b6ef-18d2bc729ee0" />
 
 ## `Bluetooth Control`
 
-> [!example] Key Assignments
 - w: Move Up
 - a: Move Left
 - s: Move Down
 - d: Move Right
 
-
+'''
+xTaskNotifyGive(ledTaskHandle); 
+ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+'''
 
 
 
