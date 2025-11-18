@@ -28,7 +28,8 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 - PC10 -> SPI3_SCK (Clock) -> MAX7219_CLK
 - PC11 -> CS (Chip Select) -> MAX7219_CS
 - PC12 -> SPI3_MOSI (Master Out Slave In) -> MAX7219_DIN
-- MAX7219_VCC -> 5V
+- MAX7219_VCC -> +5V
+- Bluetooth_VCC -> +5V
 
 
 ## `MAX7219 LED Driver`
