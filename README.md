@@ -1,4 +1,4 @@
-# STM32 Snake Game with MAX7219 & Bluetooth Control
+# STM32 Snake Game with LED Dot Matrix & Bluetooth Control
 
 Link for video demonstration: https://youtube.com/shorts/KJ2IRY3PYMU?si=vGa0bGhHLsTQnHkt
 
