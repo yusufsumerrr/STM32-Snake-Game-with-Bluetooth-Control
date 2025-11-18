@@ -35,7 +35,7 @@ void SetDirection(char cmd) {
         case 'a': if (SnakeDirection != RIGHT) SnakeDirection = LEFT;  break;
         case 'd': if (SnakeDirection != LEFT)  SnakeDirection = RIGHT; break;
     }
-}
+}```
 
-## asdasdasd
+## asdasdasdada
 
