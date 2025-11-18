@@ -29,10 +29,15 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 - PC12 -> SPI3_MOSI (Master Out Slave In)
 - MAX7219_VCC -> 5V
 
----
+## MAX7219 LED driver
 
 MAX7219 communicates with STM32 using an SPI-compatible interface.
-The device expects a 16-bit frame (8-bit address + 8-bit data), and the STM32 SPI peripheral is configured in Half-Duplex mode to transmit this data.
+The device expects a **16-bit frame**. This frame consists of a **4-bit register address** (D11-D8) and **8-bit data** (D7-D0). The most significant four bits (D15-D12) are typically 'Don't Care' bits.
+The STM32 SPI peripheral is configured in Half-Duplex Master mode to transmit this 16-bit data.
+
+<img width="769" height="61" alt="Screenshot 2025-11-18 160507" src="https://github.com/user-attachments/assets/0a08b13b-9e6c-4e6a-9f3d-d6c4dd1d5080" />
+
+
 The MAX7219 CS pin is not automatic and is controlled manually as a GPIO output.
 - The default GPIO output level of the CS pin is set to HIGH.
 - Before starting a data transfer, the CS pin is pulled LOW.
