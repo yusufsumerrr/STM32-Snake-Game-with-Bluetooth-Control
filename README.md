@@ -29,7 +29,7 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 - PC12 -> SPI3_MOSI (Master Out Slave In)
 - MAX7219_VCC -> 5V
 
-## MAX7219 LED driver
+## ==MAX7219 LED driver==
 
 MAX7219 communicates with STM32 using an SPI-compatible interface.
 The device expects a **16-bit frame**. This frame consists of a **4-bit register address** (D11-D8) and **8-bit data** (D7-D0). The most significant four bits (D15-D12) are typically 'Don't Care' bits.
