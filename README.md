@@ -35,6 +35,16 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 ![4d4c545a-e758-4b28-9b92-c54a6463f355](https://github.com/user-attachments/assets/5d89a9aa-3f6d-4fd4-ad15-d90aac2e596a)
 
 ```c
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
+	if(huart->Instance==USART1){
+
+		SetDirection(rx_data);
+		HAL_UART_Receive_IT(&huart1, &rx_data, 1);
+	}
+}
+```
+
+```c
 void SetDirection(char cmd) {
     switch (cmd) {
         case 'w': if (SnakeDirection != DOWN)  SnakeDirection = UP;    break;
