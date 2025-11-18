@@ -32,8 +32,7 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 - a: Move Left
 - d: Move Right
 
-![4d4c545a-e758-4b28-9b92-c54a6463f355](https://github.com/user-attachments/assets/2e993ff6-bab4-4a06-939f-a59632e71394)
-
+![4d4c545a-e758-4b28-9b92-c54a6463f355](https://github.com/user-attachments/assets/5d89a9aa-3f6d-4fd4-ad15-d90aac2e596a)
 
 ```c
 void SetDirection(char cmd) {
