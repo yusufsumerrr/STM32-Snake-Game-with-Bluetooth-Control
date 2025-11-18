@@ -20,6 +20,11 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 
 <img width="572" height="492" alt="Screenshot 2025-11-18 145800" src="https://github.com/user-attachments/assets/56cae7e8-617c-48dd-b6ef-18d2bc729ee0" />
 
+- PC4 -> USART1_TX
+- PC5 -> USART1_RX
+- PC10 -> SPI3_SCK (Clock)
+- PC11 -> CS (Chip Select)
+- PC12 -> SPI3_MOSI (Master Out Slave In)
 ## `Bluetooth Control`
 
 - w: Move Up
