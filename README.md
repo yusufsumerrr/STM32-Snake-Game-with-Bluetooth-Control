@@ -28,6 +28,26 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 - PC11 -> CS (Chip Select)
 - PC12 -> SPI3_MOSI (Master Out Slave In)
 - MAX7219_VCC -> 5V
+
+---
+
+MAX7219 communicates with STM32 using an SPI-compatible interface.
+The device expects a 16-bit frame (8-bit address + 8-bit data), and the STM32 SPI peripheral is configured in Half-Duplex mode to transmit this data.
+The MAX7219 CS pin is not automatic and is controlled manually as a GPIO output.
+- The default GPIO output level of the CS pin is set to HIGH.
+- Before starting a data transfer, the CS pin is pulled LOW.
+- After the SPI transfer is complete, CS is set back to HIGH.
+
+```c
+void MAX7219_SendData(uint8_t Addr, uint8_t data)
+{
+	uint16_t writeData = (Addr<<8)|data;
+	HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 0);               //enable slave
+	HAL_SPI_Transmit(&hspi3, (uint8_t *)&writeData, 1, 100);
+	HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 1); 			  //disable slave
+}
+```
+
 ## `Bluetooth Control`
 
 - w: Move Up
