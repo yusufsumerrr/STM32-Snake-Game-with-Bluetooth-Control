@@ -25,6 +25,7 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 - PC10 -> SPI3_SCK (Clock)
 - PC11 -> CS (Chip Select)
 - PC12 -> SPI3_MOSI (Master Out Slave In)
+- MAX7219_VCC -> 5V
 ## `Bluetooth Control`
 
 - w: Move Up
