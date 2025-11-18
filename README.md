@@ -35,6 +35,7 @@ This project runs a classic Snake Game application on an 8x8 LED dot matrix driv
 
 ![4d4c545a-e758-4b28-9b92-c54a6463f355](https://github.com/user-attachments/assets/5d89a9aa-3f6d-4fd4-ad15-d90aac2e596a)
 
+HAL_UART_RxCpltCallback() fonksiyonu, Bluetooth üzerinden gelen komutları kesme tabanlı olarak işler. Her karakter geldiğinde SetDirection() çağrılır ve yılanın yönü güncellenir. İşlem tamamlandıktan sonra UART tekrar non-blocking modda yeni veri alımı için etkinleştirilir.
 ```c
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 	if(huart->Instance==USART1){
@@ -45,6 +46,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 }
 ```
 
+SetDirection() fonksiyonu, gelen 'w', 'a', 's', 'd' komutlarını kontrol ederek mevcut yönün tersine dönmeyi engeller ve güvenli yön güncellemesi sağlar.
 ```c
 void SetDirection(char cmd) {
     switch (cmd) {
