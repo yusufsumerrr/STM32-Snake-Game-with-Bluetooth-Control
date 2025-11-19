@@ -60,14 +60,14 @@ void MAX7219_SendData(uint8_t Addr, uint8_t data)
 
 ## `Bluetooth Control`
 
+System control was achieved via wireless communication through a mobile platform-based application.The Arduino Bluetooth Control Application was integrated onto the mobile device, and specific command values were assigned to the directional buttons using the application's Gamepad interface.The physical layer connection between the mobile device and the embedded system (STM32) was established using an HC-05 Bluetooth Module . User inputs were carried via the Bluetooth SPP (Serial Port Profile) protocol, and this data was finally transmitted asynchronously to the main microcontroller (STM32) using the UART (Universal Asynchronous Receiver-Transmitter) serial communication interface.
+
+<img width="1058" height="493" alt="Screenshot 2025-11-18 154638" src="https://github.com/user-attachments/assets/e6dfd7f0-c8ab-43fa-80bf-8dfe2bb5ace8" />
+
 - w: Move Up
 - s: Move Down
 - a: Move Left
 - d: Move Right
-
-System control was achieved via wireless communication through a mobile platform-based application.The Arduino Bluetooth Control Application was integrated onto the mobile device, and specific command values were assigned to the directional buttons using the application's Gamepad interface.The physical layer connection between the mobile device and the embedded system (STM32) was established using an HC-05 Bluetooth Module . User inputs were carried via the Bluetooth SPP (Serial Port Profile) protocol, and this data was finally transmitted asynchronously to the main microcontroller (STM32) using the UART (Universal Asynchronous Receiver-Transmitter) serial communication interface.
-
-<img width="1058" height="493" alt="Screenshot 2025-11-18 154638" src="https://github.com/user-attachments/assets/e6dfd7f0-c8ab-43fa-80bf-8dfe2bb5ace8" />
 
 ---
 
