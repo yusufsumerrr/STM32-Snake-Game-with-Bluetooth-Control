@@ -64,10 +64,10 @@ System control was achieved via wireless communication through a mobile platform
 
 <img width="1058" height="493" alt="Screenshot 2025-11-18 154638" src="https://github.com/user-attachments/assets/e6dfd7f0-c8ab-43fa-80bf-8dfe2bb5ace8" />
 
-- w: Move Up
-- s: Move Down
-- a: Move Left
-- d: Move Right
+	- w: Move Up
+	- s: Move Down
+	- a: Move Left
+	- d: Move Right
 
 ---
 
