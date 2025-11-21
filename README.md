@@ -94,6 +94,5 @@ void SetDirection(char cmd) {
 }
 ```
 
-> [!NOTE]
-> asdasda
+
 
