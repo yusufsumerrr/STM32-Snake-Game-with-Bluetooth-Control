@@ -94,5 +94,7 @@ void SetDirection(char cmd) {
 }
 ```
 
-
+$$
+\theta_k=(1-\alpha)*\theta_{gyro,k} + \alpha * \theta_{acc,k}
+$$
 
