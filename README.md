@@ -94,5 +94,12 @@ void SetDirection(char cmd) {
 }
 ```
 
-
+<details>
+  <summary><b>Yardımcı Pin Fonksiyonlarını Görüntüle (AD0, INT, XDA)</b></summary>
+  <ul>
+    <li><b>AD0:</b> I2C adres seçimi (0x68 veya 0x69).</li>
+    <li><b>INT:</b> İşlemci verimliliği için kesme sinyali.</li>
+    <li><b>XDA/XCL:</b> Harici sensör genişletme portları.</li>
+  </ul>
+</details>
 
