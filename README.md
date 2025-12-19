@@ -56,7 +56,14 @@ void MAX7219_SendData(uint8_t Addr, uint8_t data)
 	HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 1); 			  //disable slave
 }
 ```
-
+<details>
+  <summary><b>Yardımcı Pin Fonksiyonlarını Görüntüle (AD0, INT, XDA)</b></summary>
+  <ul>
+    <li><b>AD0:</b> I2C adres seçimi (0x68 veya 0x69).</li>
+    <li><b>INT:</b> İşlemci verimliliği için kesme sinyali.</li>
+    <li><b>XDA/XCL:</b> Harici sensör genişletme portları.</li>
+  </ul>
+</details>
 
 ## `Bluetooth Control`
 
@@ -94,12 +101,5 @@ void SetDirection(char cmd) {
 }
 ```
 
-<details>
-  <summary><b>Yardımcı Pin Fonksiyonlarını Görüntüle (AD0, INT, XDA)</b></summary>
-  <ul>
-    <li><b>AD0:</b> I2C adres seçimi (0x68 veya 0x69).</li>
-    <li><b>INT:</b> İşlemci verimliliği için kesme sinyali.</li>
-    <li><b>XDA/XCL:</b> Harici sensör genişletme portları.</li>
-  </ul>
-</details>
+
 
